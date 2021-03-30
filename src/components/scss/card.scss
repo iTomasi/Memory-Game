@@ -1,0 +1,16 @@
+.card {
+    img {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+    }
+
+    .card__back {
+        cursor: pointer;
+    }
+
+    .card__front {
+        background: #1f2833;
+        display: none;
+    }
+}

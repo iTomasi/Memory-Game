@@ -1,0 +1,22 @@
+.notification {
+    position: fixed;
+    top: 50px;
+    left: -500px;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px 20px;
+    z-index: 1000;
+    
+    transition-property: left;
+    transition-duration: 0.3s;
+}
+
+.notification.active {
+    left: 20px;
+    transition-property: left;
+    transition-duration: 0.3s;
+}
+
+.notification__error {
+    background: #e74c3c;
+}
