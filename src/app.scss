@@ -6,3 +6,28 @@
         justify-content: center;
     }
 }
+
+
+@media screen and (max-width: 870px) {
+    .content {
+        .grid {
+            grid-template-columns: repeat(3, 180px);
+        }
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .content {
+        .grid {
+            grid-template-columns: repeat(2, 180px);
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .content {
+        .grid {
+            grid-template-columns: 180px;
+        }
+    }
+}
