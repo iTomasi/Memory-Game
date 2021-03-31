@@ -53,7 +53,7 @@ const App = () => {
     addActive: false
   })
   const [playAgainScreen, setPlayAgainScreen] = useState<boolean>(false);
-
+  
   useEffect(() => {
     checkingPairs(checkPair)
 
@@ -69,7 +69,8 @@ const App = () => {
       setGameFinished(true)
       setPlayAgainScreen(true)
     }
-  }, [checkPair, waitingTimeout, apiLoaded])
+    // eslint-disable-next-line
+  }, [checkPair, waitingTimeout, apiLoaded, pairsFound, totalPairs])
 
 
   const callingPokeAPI = async (num: number) => {
